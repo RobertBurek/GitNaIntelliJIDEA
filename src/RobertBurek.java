@@ -4,7 +4,7 @@ import java.util.*;
  * Created by Robert Burek
  */
 public class RobertBurek {
-    static int ILOSC_ELEMENTOW;
+    //static int ILOSC_ELEMENTOW;
     public static void wypiszZdania(ArrayList listaZdan){
         int i = 1;
         for(Object s : listaZdan){
@@ -20,7 +20,7 @@ public class RobertBurek {
         int i = 0;
         Random iLosowe = new Random();
         int z;
-        String[] listaPierwotna = new String[ILOSC_ELEMENTOW];
+        String[] listaPierwotna = new String[listaZdan.size()];
         for(Object s : listaZdan) {
             listaPierwotna[i] = s.toString();
             i++;
@@ -35,7 +35,7 @@ public class RobertBurek {
 
         ArrayList<String> listaZdan = new ArrayList<>();
 
-        ILOSC_ELEMENTOW = 5;
+     //   ILOSC_ELEMENTOW = 5;
         listaZdan.add("Robert Burek");
         listaZdan.add("Jednak dodałem jeszcze inną linie w tym miejscu");
         listaZdan.add("Nowa linia w projekcie.");
