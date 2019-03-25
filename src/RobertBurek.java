@@ -32,10 +32,7 @@ public class RobertBurek {
         }
     }
 
-    public static void main(String[] args) {
-
-        ArrayList<String> listaZdan = new ArrayList<>();
-
+    private static void tworzenieListyZdan(ArrayList<String> listaZdan) {
         listaZdan.add("Robert Burek");
         listaZdan.add("Jednak dodałem jeszcze inną linie w tym miejscu");
         listaZdan.add("Nowa linia w projekcie.");
@@ -43,9 +40,20 @@ public class RobertBurek {
         listaZdan.add("Ktoś może dodać coś od siebie.");
         listaZdan.add("Szóste zdanie");
         listaZdan.add("Jest siedem zdań totalnie bez sensu.");
+    }
+
+
+
+    public static void main(String[] args) {
+
+        ArrayList<String> listaZdan = new ArrayList<>();
+
+        tworzenieListyZdan(listaZdan);
 
         wypiszZdania(listaZdan);
         System.out.println("---------------LOSOWO----------------------");
         wypiszZdaniaLosowo(listaZdan);
     }
+
+
 }
