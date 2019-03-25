@@ -40,6 +40,9 @@ public class RobertBurek {
         listaZdan.add("Nowa linia w projekcie.");
         listaZdan.add("Jeszcze jedna linia do wypisania.");
         listaZdan.add("Ktoś może dodać coś od siebie.");
+        listaZdan.add("Szóste zdanie");
+        listaZdan.add("Jest siedem zdań totalnie bez sensu.");
+
 
         wypiszZdania(listaZdan);
         System.out.println("---------------LOSOWO----------------------");
