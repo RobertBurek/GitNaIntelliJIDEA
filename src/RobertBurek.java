@@ -5,9 +5,9 @@ import java.util.*;
  */
 public class RobertBurek {
 
-    public static void wypiszZdania(ArrayList listaZdan){
+    public static void wypiszZdania(ArrayList listaZdan) {
         int i = 1;
-        for(Object s : listaZdan){
+        for (Object s : listaZdan) {
             System.out.print(i + " - ");
             System.out.println(s);
             i++;
@@ -16,22 +16,23 @@ public class RobertBurek {
 
     public static Set<Integer> sprawdzamListe = new HashSet<>();
 
-    public static void wypiszZdaniaLosowo(ArrayList listaZdan){
+    public static void wypiszZdaniaLosowo(ArrayList listaZdan) {
         int i = 0;
         Random iLosowe = new Random();
         int z;
         String[] listaPierwotna = new String[listaZdan.size()];
-        for(Object s : listaZdan) {
+        for (Object s : listaZdan) {
             listaPierwotna[i] = s.toString();
             i++;
         }
-        for (int j = 0; j < listaPierwotna.length; j++){
-            while (!sprawdzamListe.add(z = iLosowe.nextInt(listaPierwotna.length))){}
+        for (int j = 0; j < listaPierwotna.length; j++) {
+            while (!sprawdzamListe.add(z = iLosowe.nextInt(listaPierwotna.length))) {
+            }
             System.out.println((z + 1) + " - " + listaPierwotna[z]);
         }
     }
 
-    public static void main (String[] args){
+    public static void main(String[] args) {
 
         ArrayList<String> listaZdan = new ArrayList<>();
 
@@ -42,7 +43,6 @@ public class RobertBurek {
         listaZdan.add("Ktoś może dodać coś od siebie.");
         listaZdan.add("Szóste zdanie");
         listaZdan.add("Jest siedem zdań totalnie bez sensu.");
-
 
         wypiszZdania(listaZdan);
         System.out.println("---------------LOSOWO----------------------");
