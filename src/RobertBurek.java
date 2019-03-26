@@ -40,6 +40,7 @@ public class RobertBurek {
         listaZdan.add("Ktoś może dodać coś od siebie.");
         listaZdan.add("Szóste zdanie");
         listaZdan.add("Jest siedem zdań totalnie bez sensu.");
+        listaZdan.add("Kolejne zdanie do listy zdań");
     }
 
 
@@ -54,6 +55,5 @@ public class RobertBurek {
         System.out.println("---------------LOSOWO----------------------");
         wypiszZdaniaLosowo(listaZdan);
     }
-
 
 }
