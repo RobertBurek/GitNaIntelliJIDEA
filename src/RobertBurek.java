@@ -43,6 +43,16 @@ public class RobertBurek {
         listaZdan.add("Kolejne zdanie do listy zdań");
     }
 
+    public static void songDecoder(String tekst) {
+        int i = 0;
+        String fraza = "WUB";
+        String slowaPiosenki = "BUHJNHJHJJJKJKJKKNKUNNUN";
+        //System.out.println(slowaPiosenki);
+        while(i < slowaPiosenki.length()) {
+            i++;
+        }
+    }
+
 
 
     public static void main(String[] args) {
